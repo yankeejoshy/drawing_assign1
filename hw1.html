@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML and CSS</title>
+        <style>
+            
+            body { margin: 0;
+                   padding: 0;
+                   background-color: darkblue; }
+            
+            #container {
+                    background-size: cover;
+                    background-position: center;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    align-items: center;
+                    min-height: 100%;
+                    min-width: 100%;
+                    width: auto;
+                    height: auto;
+                    }
+            
+            video { z-index: -1;
+                    mix-blend-mode: multiply;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    min-width: 100%;;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto; }
+          
+            #bubbles { z-index: 1;
+                       opacity: 50%;
+                       mix-blend-mode: multiply; }
+        
+            audio { z-index: 2;
+                    mix-blend-mode: lighten;
+                    position: fixed;
+                    bottom: 0px;
+                    left: 0px;}
+        
+        </style>
+	</head>
+	<body>	
+        <div id="container">
+            
+        <audio autoplay loop controls>
+        <source src="jantrax-sunset.mp3" type = "audio/mpeg">
+        </audio>
+      
+        <video autoplay muted loop>
+        <source src="Fish%20Tank.mp4" type= "video/mp4">
+        Your browser does not support this video
+        </video>
+        
+        <video autoplay muted loop>
+        <source src="Jellyfish.mp4" type= "video/mp4">
+        Your browser does not support this video
+        </video>
+        
+        <video autoplay muted loop id="bubbles">
+        <source src="Bubbles_Animation.mp4" type= "video/mp4">
+        Your browser does not support this video
+        </video>
+    
+        </div>  
+	</body>
+</html>
